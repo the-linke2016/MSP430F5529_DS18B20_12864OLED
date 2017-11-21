@@ -31,6 +31,8 @@ int main( void )
 	delay_ms(100);
 	OLED_Init();		 //初始化OLED
 	OLED_Clear();
+        
+        //OLED_ShowString( 10, 4, "2017/11/21" );
 
 	DS18B20_Reset();	 //复位D18B20
 	while(1)
@@ -41,7 +43,7 @@ int main( void )
 	    data_do(temp_value);                  //处理数据，得到要显示的值
 	    for(j=0;j<30;j++)
 	    {
-	    	OLED_ShowString(30,10,Temp_Value);		//显示温度，温度值在Temp_Value数组里
+	    	OLED_ShowString(30,4,Temp_Value);		//显示温度，温度值在Temp_Value数组里
 	    }
 	}
 

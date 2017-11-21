@@ -12,7 +12,7 @@
 
 "-p" 
 
-"D:\IAR7.10\430\config\debugger\msp430f5529.ddf" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\430\config\debugger\msp430f5529.ddf" 
 
 "--core=430Xv2" 
 

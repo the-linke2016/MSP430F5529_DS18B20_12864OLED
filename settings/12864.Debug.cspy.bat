@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\IAR7.10\common\bin\cspybat" -f "C:\Users\Administrator\Desktop\12864_5529_DS18B20\settings\12864.Debug.general.xcl" --backend -f "C:\Users\Administrator\Desktop\12864_5529_DS18B20\settings\12864.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\Users\K\MSP430F5529_DS18B20_12864OLED\settings\12864.Debug.general.xcl" --backend -f "C:\Users\K\MSP430F5529_DS18B20_12864OLED\settings\12864.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\IAR7.10\common\bin\cspybat" -f "C:\Users\Administrator\Desktop\12864_5529_DS18B20\settings\12864.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Administrator\Desktop\12864_5529_DS18B20\settings\12864.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\Users\K\MSP430F5529_DS18B20_12864OLED\settings\12864.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\K\MSP430F5529_DS18B20_12864OLED\settings\12864.Debug.driver.xcl" 
 
 @echo off 
 :end

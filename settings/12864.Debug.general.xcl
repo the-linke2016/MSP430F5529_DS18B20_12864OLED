@@ -1,10 +1,10 @@
-"D:\IAR7.10\430\bin\430proc.dll" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\430\bin\430proc.dll" 
 
-"D:\IAR7.10\430\bin\430fet.dll" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\430\bin\430fet.dll" 
 
-"C:\Users\Administrator\Desktop\12864_5529_DS18B20\Debug\Exe\12864.d43" 
+"C:\Users\K\MSP430F5529_DS18B20_12864OLED\Debug\Exe\12864.d43" 
 
---plugin "D:\IAR7.10\430\bin\430bat.dll" 
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\430\bin\430bat.dll" 
 
 
 

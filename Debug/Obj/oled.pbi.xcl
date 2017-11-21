@@ -1,12 +1,12 @@
-"C:\Users\Administrator\Desktop\12864_5529_IAR\oled.c"
+"C:\Users\K\MSP430F5529_DS18B20_12864OLED\oled.c"
 -std=c99
 -ferror-limit=100
 -I
-D:\IAR7.10\430\inc\dlib
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\430\inc\dlib
 -I
-D:\IAR7.10\430\inc
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\430\inc
 -I
-D:\IAR7.10\430\inc\dlib\c
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\430\inc\dlib\c
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
@@ -253,8 +253,8 @@ D:\IAR7.10\430\inc\dlib\c
 -D__EDG_ANSIC=1
 -D__EDG_CPP11_IL_EXTENSIONS_SUPPORTED=1
 -D__MSP430F5529__=1
--D_DLIB_CONFIG_FILE_HEADER_NAME="D:\IAR7.10\430\lib\dlib\dl430xlsfn.h"
--D_DLIB_CONFIG_FILE_STRING="D:\\IAR7.10\\430\\lib\\dlib\\dl430xlsfn.h"
+-D_DLIB_CONFIG_FILE_HEADER_NAME="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\430\lib\dlib\dl430xlsfn.h"
+-D_DLIB_CONFIG_FILE_STRING="C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.0\\430\\lib\\dlib\\dl430xlsfn.h"
 -D__VERSION__="IAR C/C++ Compiler V7.10.1.973/W32 for MSP430"
 -D__CODE_MEMORY_LIST1__()=__CODE_MEM_HELPER1__(__code, 0 )
 -D__CODE_MEMORY_LIST2__(_P1)=__CODE_MEM_HELPER2__(__code, 0 ,  _P1 )

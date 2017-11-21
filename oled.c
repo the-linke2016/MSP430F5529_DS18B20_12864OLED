@@ -24,6 +24,7 @@
 #include "oledfont.h"
 #include "for_5438_wjx.c"
 
+
 /*
  * #include "delay.h"
  * OLED的显存
@@ -144,7 +145,7 @@ void OLED_ShowChar( u8 x, u8 y, u8 chr )
 		OLED_Set_Pos( x, y + 1 );
 		for ( i = 0; i < 8; i++ )
 			OLED_WR_Byte( F8X16[c * 16 + i + 8], OLED_DATA );
-	}else  {
+	}else {
 		OLED_Set_Pos( x, y + 1 );
 		for ( i = 0; i < 6; i++ )
 			OLED_WR_Byte( F6x8[c][i], OLED_DATA );
@@ -328,27 +329,33 @@ void OLED_Init( void )
 	OLED_Set_Pos( 0, 0 );
 }
 
-//系统时钟初始化
-void Clock_Init(void)
+
+/* 系统时钟初始化 */
+void Clock_Init( void )
 {
-  unsigned char i;
-  P5SEL |= BIT2+BIT3;               // Port select XT2
-  put_XT2OFF(0);
+	unsigned char i;
+	P5SEL |= BIT2 + BIT3;           /* Port select XT2 */
+	put_XT2OFF( 0 );
 
-//  BCSCTL1&=~XT2OFF;                 //打开XT2振荡器
-//  BCSCTL2|=SELM1+SELS;              //MCLK为8MHZ，SMCLK为8MHZ
-  do{
-	  put_XT2OFFG(0);                   //清楚振荡器错误标志
-    for(i=0;i<100;i++)
-       _NOP();
-  }
-  while(SFRIFG1&OFIFG);           //如果标志位1，则继续循环等待
-  put_XT2OFFG(0);
+/*
+ *  BCSCTL1&=~XT2OFF;                 //打开XT2振荡器
+ *  BCSCTL2|=SELM1+SELS;              //MCLK为8MHZ，SMCLK为8MHZ
+ */
+        
+        
 
-    put_XT2BYPASS(0);
-    put_XT2DRIVE(1);
-    put_SELM(5);
-    put_SELS(5);
-    put_DIVM(0);
-    put_DIVS(0);
+	put_XT2OFFG( 0 );
+
+	put_XT2BYPASS( 0 );
+	put_XT2DRIVE( 1 );
+	put_SELM( 5 );
+	put_SELS( 5 );
+	put_DIVM( 0 );
+	put_DIVS( 0 );
+        
+        put_P2DIR_BIT4(0);
+        put_P2REN_BIT4(1);
+        put_P2OUT_BIT4(1);
 }
+
+
